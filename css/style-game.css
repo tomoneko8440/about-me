@@ -1,13 +1,57 @@
 @charset "UTF-8";
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    flex: 1 1 300px;
+}
+
+html{
+    font-size: 150%;
+    background-color: rgb(73, 73, 79);
+    animation: forwards;
+    text-align: center;
+    z-index: auto;
+    background-image: url(../images/game-background.png);
+    background-position: center;
+    background-size: auto;
+}
+
 .game-title{
     background-color: rgba(13, 13, 252, 0.771);
 }
+.page{
+    max-width: 800px;
+    margin: 0 auto;
+    position: center;    
+}
 
 .back{
-    font-size: 150%;
-    background-color: rgb(45, 141, 225);
+    background-color: rgb(255, 255, 255);
     text-align: right;
     position: absolute;
     right: 10px;
+}
+
+.game-title2{
+    background-color: rgba(11, 238, 204, 0.562);
+    margin-top: 20px;
+    padding: 20px;
+}   
+
+.main {
+    display: grid;
+    background-color: rgba(123, 240, 240, 0.485);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.games {
+    background-color: rgba(255, 255, 255, 0.562);
+    margin-top: 20px;
+    padding: 20px;
 }

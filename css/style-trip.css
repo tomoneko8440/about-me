@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    flex: 1 1 300px;
+}
+
 .trip-title{
     background-color: rgba(13, 13, 252, 0.771);
 }
