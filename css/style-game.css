@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.game-title{
+    background-color: rgba(13, 13, 252, 0.771);
+}
+
+.back{
+    font-size: 150%;
+    background-color: rgb(45, 141, 225);
+    text-align: right;
+    position: absolute;
+    right: 10px;
+}
