@@ -19,15 +19,15 @@ html{
 
 
 .header-background-image{
-    background-image: url(../images/h1.png);
+    background-image: url(../images/IMG_4190.png);
     background-size: cover;
     background-position: center;
     color: rgb(239, 28, 70);  
 }
 
 .mokuji{
-    background-color: rgba(38, 202, 243, 0.791);
-
+    background-color: rgba(108, 143, 152, 0.562);
+    color: rgb(240, 220, 85);
 }
 
 .contents{
