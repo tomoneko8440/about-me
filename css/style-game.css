@@ -16,8 +16,8 @@ html{
     animation: forwards;
     text-align: center;
     z-index: auto;
-    background-image: url(../images/game-background.png),url(../images/image.png);
-    background-position: top center,bottom center;
+    background-image: url(../images/game-background.png),url(../images/image.png),url(../images/2025-10-22_17.02.34.png);
+    background-position: top center,bottom center,center;
     background-size: auto;
 }
 

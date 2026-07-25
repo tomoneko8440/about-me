@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/* 画面全体を覆う枠（はみ出た部分は隠す） */
+.bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* 3枚の画像を横一列に並べるトラック（画面3枚分の太さ） */
+.bg-track {
+    display: flex;
+    width: 300vw; 
+    height: 100vh;
+    /* 2枚分（画面2個分）の距離を左に動かしてループさせる */
+    animation: smooth-slide 20s linear infinite;
+}
+
+/* 各スライドの共通設定（画面1個分のサイズ） */
+.bg-slide {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 1枚目と3枚目（ループ用）に同じ画像を指定 */
+.img1 { background-image: url('../images/2025-10-22_17.01.55.png'); }
+/* 2枚目に別の画像を指定 */
+.img2 { background-image: url('../images/2025-10-22_17.02.34.png'); }
+
+/* 【最重要】画面2個分（-200vw）動いた瞬間、最初の0%と見た目が同じになるため繋ぎ目が消える */
+@keyframes smooth-slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200vw);
+    }
+}
+
+html{
+    
+    font-size: 150%;
+    animation: forwards;
+    text-align: center;
+    z-index: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    flex: 1 1 300px;
+}
+
+.gamelist-title{
+    background-color: rgba(13, 13, 252, 0.771);
+}
+
+.back{
+    font-size: 150%;
+    background-color: rgb(45, 141, 225);
+    text-align: right;
+    position: absolute;
+    right: 10px;
+}
+
+.gametitle-p1{
+    background-color: aliceblue ;   
+}
+
+.page{
+    max-width: 800px;
+    margin: 0 auto;
+    position: center;  
+}
+
+.game2{
+    background-color: #41f9d1e0;
+}
+
+.gamelist-h2{
+    background-color: rgba(134, 160, 231, 0.745);
+}
+
+.game-p2{
+    background-color:rgba(56, 209, 239, 0.611)
+}

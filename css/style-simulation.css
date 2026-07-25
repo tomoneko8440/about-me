@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 
+
 html{
     font-size: 150%;
     background-color: rgb(170, 170, 228);
@@ -11,53 +12,43 @@ html{
     background-size: auto;
 }
 
-
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
-.trip-page{
-    max-width: 800px;
-    margin: 0 auto;
-    position: center;    
-}
-
 
 .item {
     flex: 1 1 300px;
 }
 
-.trip-title{
+.simulation-title{
     background-color: rgba(13, 13, 252, 0.771);
 }
 
 .back{
     font-size: 150%;
-    background-color: rgb(176, 216, 250);
+    background-color: rgb(45, 141, 225);
     text-align: right;
     position: absolute;
     right: 10px;
 }
 
-.trip-h2{
-    background-color: rgb(72, 145, 209);
+.simulation-title2{
+    background-color: rgba(97, 242, 230, 0.674);
 }
 
-.trip-img{
-    width: 100%;
-    height: 100%;
+.simulation-p1{
+    background-color: rgba(23, 147, 255, 0.564);
 }
 
-.trip-location{
-    text-align: left;
-    background-color: rgb(62, 103, 73);
-    position: auto;
-    right: 4%;
-    color: rgb(255, 253, 253);
+.honbun{
+
 }
 
-.trip{
-    text-align: center;
-    background-color: rgba(81, 177, 142, 0.678);
+.simulation-img{
+
+}
+.gametite{
+    
 }
