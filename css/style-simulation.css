@@ -5,6 +5,7 @@
 body {
     font-size: 1rem;
     line-height: 1.8;
+    min-height: 100vh;
 }
 
 html{
@@ -64,12 +65,18 @@ img {
     flex: 1 1 300px;
 }
 
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px 32px;
+}
+
 .simulation-title{
     background-color: rgba(13, 13, 252, 0.771);
 }
 
 .back{
-    font-size: 150%;
+    font-size: 1rem;
     background-color: rgb(45, 141, 225);
     text-align: right;
     position: absolute;
@@ -78,19 +85,44 @@ img {
 
 .simulation-title2{
     background-color: rgba(97, 242, 230, 0.674);
+    padding: 16px;
 }
 
 .simulation-p1{
     background-color: rgba(23, 147, 255, 0.564);
+    padding: 16px;
 }
 
 .honbun{
-
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.45);
 }
 
 .simulation-img{
+    display: none;
 
 }
 .gametite{
-    
+    display: none;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .page {
+        padding: 0 12px 28px;
+    }
+
+    .back {
+        position: static;
+        right: auto;
+        text-align: center;
+        margin: 8px 0 16px;
+    }
 }
