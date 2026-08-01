@@ -1,14 +1,57 @@
 @charset "UTF-8";
 
 
+body {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
 html{
-    font-size: 150%;
+    font-size: clamp(16px, 1.2vw + 12px, 20px);
     background-color: rgb(170, 170, 228);
     animation: forwards;
     text-align: center;
     z-index: auto;
     background-position: top center,bottom center;
     background-size: auto;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+p,
+a {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .back {
+        position: static;
+        right: auto;
+        text-align: center;
+        margin-bottom: 0.75rem;
+    }
 }
 
 
@@ -20,7 +63,8 @@ html{
 .trip-page{
     max-width: 800px;
     margin: 0 auto;
-    position: center;    
+    position: center;
+    padding: 0 16px 24px;
 }
 
 
@@ -44,20 +88,50 @@ html{
     background-color: rgb(72, 145, 209);
 }
 
-.trip-img{
+.trip-gallery{
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 12px 0 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.trip-card{
+    flex: 0 0 min(78vw, 360px);
+    scroll-snap-align: start;
+    background-color: rgba(81, 177, 142, 0.678);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.trip-card .trip-img{
     width: 100%;
-    height: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
 }
 
 .trip-location{
     text-align: left;
     background-color: rgb(62, 103, 73);
-    position: auto;
-    right: 4%;
     color: rgb(255, 253, 253);
+    padding: 12px 14px 0;
 }
 
 .trip{
-    text-align: center;
+    text-align: left;
     background-color: rgba(81, 177, 142, 0.678);
+    padding: 0 14px 14px;
+}
+
+@media (min-width: 769px) {
+    .trip-gallery{
+        padding-bottom: 28px;
+    }
+
+    .trip-card{
+        flex-basis: 320px;
+    }
 }
