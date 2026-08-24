@@ -56,7 +56,7 @@ img {
     display: flex;
     width: 300vw;
     height: 100vh;
-    animation: smooth-slide 20s linear infinite;
+    animation: smooth-slide 27s linear infinite;
 }
 
 .bg-slide {
