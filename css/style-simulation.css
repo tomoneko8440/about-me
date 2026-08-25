@@ -98,16 +98,49 @@ img {
     background-color: rgba(255, 255, 255, 0.45);
 }
 
-.cargame-img{
-    display: none;
+.gallery-lead {
+    margin-bottom: 20px;
 }
 
-.simulation-img{
-    display: none;
-
+.simulation-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
 }
-.gametite{
-    display: none;
+
+.simulation-card {
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+}
+
+.simulation-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.simulation-card figcaption {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+    text-align: left;
+    color: #1b2a4a;
+}
+
+.game-name {
+    margin: 0 0 6px;
+    font-weight: 700;
+}
+
+.game-detail {
+    margin: 0;
+    padding: 10px;
+    min-height: 84px;
+    background-color: rgba(237, 245, 255, 0.95);
+    border: 1px dashed rgba(27, 42, 74, 0.35);
+    border-radius: 8px;
 }
 
 @media (max-width: 768px) {
@@ -128,5 +161,10 @@ img {
         right: auto;
         text-align: center;
         margin: 8px 0 16px;
+    }
+
+    .simulation-gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
     }
 }
